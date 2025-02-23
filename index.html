@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rejoignez SWorld, un serveur Cobblemon unique avec une communauté active ! IP : play.SWorld.fr.">
+    <meta name="keywords" content="Minecraft, Serveur, Multijoueur, Cobblemon, Communauté, SWorld">
+    <title>SWorld - Accueil</title>
+    
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-155264314-1');
+    </script>
+    
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <link rel="icon" type="image/png" href="img/1572179150-sworld.png">
+    <style>
+        .server-description {
+            color: white;
+            text-align: center;
+            margin: 20px 0;
+            padding: 0 10px;
+        }
+        .image-gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin-top: 20px;
+        }
+        .image-gallery img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .image-gallery img:hover {
+            transform: scale(1.1);
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+        .modal img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 10px;
+        }
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+        }
+        .items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            padding: 20px;
+        }
+        .item img {
+            width: 150px;
+            height: auto;
+        }
+        @media (max-width: 600px) {
+            .item img {
+                width: 120px;
+            }
+			.logo img{
+				margin-top: 600px;
+			}
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="./img/5cc8dfeade12d0c5cd741edb9ae24d81.png" alt="Logo SWorld">
+        </div>
+        
+        <div class="playercount">
+            <p>Rejoignez-nous sur : <span>cosmo.mine.fun</span></p>
+        </div>
+       <div class="modal" id="imageModal">
+            <span class="modal-close" id="closeModal">&times;</span>
+            <img id="modalImage" src="" alt="Agrandissement">
+        </div>
+
+        <div class="items">
+            <div class="item store">
+                <a href="./shop.html">
+                    <img src="img/store.png" alt="Achetez des items et avantages dans la boutique">
+                </a>
+            </div>
+
+            <div class="item vote">
+                <a href="http://vote.sworlds.fr/vote" target="_blank">
+                    <img src="img/vote.png" alt="Votez pour le serveur et gagnez des récompenses">
+                </a>
+            </div>
+            
+            <div class="item discord">
+                <a href="https://discord.gg/xscBSgHjeC" target="_blank">
+                    <img src="img/discord.png" alt="Rejoignez notre serveur Discord">
+                </a>
+            </div>
+        </div>
+        <div class="how-to-join" style="background: rgba(0, 0, 0, 0.8); padding: 20px; border-radius: 10px; text-align: center; color: white; max-width: 800px; margin: 20px auto;">
+            <h2 style="color: #f8d210; text-transform: uppercase; margin-bottom: 15px;">Comment rejoindre le serveur Cosmo</h2>
+            <p style="font-size: 1.1em;">Suivez ces étapes pour nous rejoindre :</p>
+            <ol style="text-align: left; display: inline-block;">
+                <li><strong>Téléchargez et installez <a href="https://www.curseforge.com/download/app" target="_blank" style="color: #f8d210; text-decoration: underline;">CurseForge</a></li> </strong></li>
+                <li><strong>Téléchargez Cobblemon et Stat Academy</strong> à partir de ce lien : <a href="https://www.curseforge.com/minecraft/modpacks/cobblemon-star-academy" target="_blank" style="color: #f8d210; text-decoration: underline;">Télécharger Cobblemon: Star Academy </a></li>
+                <li>Ajoutez les fichiers dans le dossier <code>mods</code> de votre installation Minecraft.</li>
+                <li>Lancez Minecraft avec Forge et allez dans <strong>Multiplayer</strong>.</li>
+                <li>Ajoutez le serveur avec l'IP : <code style="color: #f8d210; font-weight: bold;">play.cosmo-mc.com</code></li>
+                <li><strong>Rejoignez l'aventure et amusez-vous !</strong></li>
+            </ol>
+        </div>
+		<div class="server-description">
+            <p>Cosmo est un serveur Cobblemon unique en son genre ! Capturez, 
+            échangez et combattez avec vos amis dans un univers immersif combinant 
+            Minecraft et l'expérience des Pokémons.</p>
+        </div>
+
+
+        <div class="image-gallery">
+            <img src="img/image1.png" alt="Aperçu du serveur Cosmo" class="gallery-img">
+            <img src="img/maxresdefault.jpg" alt="Combat Cobblemon sur Cosmo" class="gallery-img">
+            <img src="img/image2.png" alt="Exploration sur Cosmo" class="gallery-img">
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="js/firefly.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery.js"></script>
+    <script>
+        document.querySelectorAll('.gallery-img').forEach(img => {
+            img.addEventListener('click', function() {
+                document.getElementById('modalImage').src = this.src;
+                document.getElementById('imageModal').style.display = 'flex';
+            });
+        });
+        
+        document.getElementById('closeModal').addEventListener('click', function() {
+            document.getElementById('imageModal').style.display = 'none';
+        });
+    </script>
+</body>
+</html>
